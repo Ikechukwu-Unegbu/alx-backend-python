@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-'''Task zero.
+'''Task two file.
 '''
 import asyncio
 import time
@@ -12,6 +12,6 @@ def measure_time(n: int, max_delay: int) -> float:
     
     '''Calculate average runtime of wait_n.
     '''
-    begin_time = time.time()
+    wait_times = time.time()
     asyncio.run(wait_n(n, max_delay))
-    return (time.time() - begin_time) / n
+    return (time.time() - wait_times) / n
