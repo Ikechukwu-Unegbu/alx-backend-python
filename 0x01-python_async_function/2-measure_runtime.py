@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-'''Task two file.
+'''Task two file
 '''
 import asyncio
 import time
@@ -9,9 +9,8 @@ wait_n = __import__('1-concurrent_coroutines').wait_n
 
 
 def measure_time(n: int, max_delay: int) -> float:
-    
-    '''Calculate average runtime of wait_n.
+    '''Calculates average runtime of wait_n.
     '''
-    wait_times = time.time()
+    start_time = time.time()
     asyncio.run(wait_n(n, max_delay))
-    return (time.time() - wait_times) / n
+    return (time.time() - start_time) / n
