@@ -11,4 +11,4 @@ async_generator = using('0-async_generator').async_generator
 async def async_comprehension() -> List[float]:
     """Creates list of ten num from 10-number generator.
     """
-    return [num async for num in async_generator()]
+    return [number async for number in async_generator()]
