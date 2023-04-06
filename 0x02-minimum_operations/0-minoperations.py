@@ -2,6 +2,9 @@
 """Min operations challenge with python."""
 
 def minOperations(n):
+    """
+    Min Operations calculation
+    """
     if n < 1:
         return 0
     if n == 1:
